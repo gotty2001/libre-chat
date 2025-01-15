@@ -71,7 +71,7 @@ endpoints:
 
     # SambaNova
     - name: "SambaNova"
-      apiKey: "e2edf66e-21e2-498b-9379-1eef9378c8f5"
+      apiKey: "e62f7d63-02e3-4770-8639-73e611d6c552"
       baseURL: "https://api.sambanova.ai/v1"
       models:
         default:
