@@ -508,5 +508,14 @@ endpoints:
       titleModel: "command"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
 
+    version: '3.4'
+    services:
+      rag_api:
+        image: ghcr.io/danny-avila/librechat-rag-api-dev:latest
+        environment:
+          - RAG_API_URL=http://host.docker.internal:8000
+          - EMBEDDINGS_PROVIDER=huggingface
+          - HF_TOKEN=hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
